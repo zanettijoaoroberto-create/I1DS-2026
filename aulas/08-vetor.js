@@ -34,6 +34,7 @@ dinos.pop();
 console.table(dinos);
 console.log("O Vetor agora tem", dinos.length, "elementos");
 
+
 // shift ->  Remover um elemento do inicio do vetor (Primeiro elemento)
 dinos.shift();
 console.table(dinos);
@@ -73,3 +74,10 @@ console.table(dinos);
 // Alterar o valor de um elemento a partir do indice
 dinos[1] = "Anquilossauro";
 console.table(dinos);
+
+// slice -> Criar uma cópia do Vetor 
+let novalista = dinos.slice(); // Cópia completa do vetor dinos 
+console.table(dinos);
+
+let listaParcial = dinos.slice(1, 3)// Cria uma cópia do vetor dinos a partir do indice onde começa e onde termina a copia
+console.table(listaParcial);
