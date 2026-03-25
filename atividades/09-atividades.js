@@ -19,7 +19,7 @@ console.log("Meu nome é", nome, "e eu tenho", idade, "anos \n");
 console.log("-----------------------------------------------------------");
 
 // 2- Operações básicas
-let n1 = 10, n2 = 5;
+let n1 = 20, n2 = 5;
 console.log("Soma:", n1 + n2);
 console.log("Subtração:", n1 - n2);
 console.log("Multiplicação:", n1 * n2);
@@ -53,7 +53,7 @@ console.log(celsius + "°C equivale a " + fahrenheit + "°F");
 
 console.log("-----------------------------------------------------------");
 
-// 8- Média das notas alunos
+// 7- Média das notas alunos
 let nota1 = 8, nota2 = 7, nota3 = 9;
 console.log("Média:", (nota1 + nota2 + nota3) / 3);
 
@@ -116,15 +116,15 @@ else console.log("Voto facultativo");
 
 console.log("-----------------------------------------------------------");
 // 16- Entre 10 e 50
-let nRange = 25;
-if (nRange >= 10 && nRange <= 50) console.log("Está no intervalo");
+let numero = 25;
+if (numero >= 10 && numero <= 50) console.log("Está no intervalo");
 
 console.log("-----------------------------------------------------------");
 
 // 17- Login
-let user = "admin", pass = "1234";
-if (user === "admin" && pass === "1234") console.log("Acesso permitido");
-else console.log("Acesso negado");
+let username = "admin", senha = "1234";
+if (username === "admin" && senha === "1234") console.log("Acesso Autorizado, seja bem-vindo!");
+else console.log("Acesso Rejeitado, se necessário tente novamente");
 
 console.log("-----------------------------------------------------------");
 
@@ -153,10 +153,7 @@ else console.log("Idoso");
 console.log("-----------------------------------------------------------");
 console.log("PARTE 3 DOS EXERCICIOS");
 console.log("-----------------------------------------------------------");
-/*******************************************************/
-//      PARTE 3
-/*******************************************************/
-console.log("-----------------------------------------------------------");
+
 // 21- Dias da semana
 let dia = 1;
 switch(dia) {
@@ -183,10 +180,8 @@ switch(op) {
     case 1: console.log("Operação Soma"); break;
     case 2: console.log("Operação Subtrair"); break;
 }
-
-/**********************************************************/
-//              PARTE 4
-/*********************************************************/
+console.log("-----------------------------------------------------------");
+console.log("PARTE 4 DOS EXERCICIOS");
 console.log("-----------------------------------------------------------");
 
 // 26- De 1 a 100
