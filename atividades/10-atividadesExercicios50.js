@@ -154,10 +154,15 @@ console.log("PARTE 3 – Switch Case (21 a 25)");
 console.log("-----------------------------------------------------------");
 
 // 21- Numero de 1 a 7, dias da semana
-let dia = 1;
+let dia = 6;
 switch(dia) {
     case 1: console.log("Domingo"); break;
     case 2: console.log("Segunda"); break;
+     case 3: console.log("Terça"); break;
+      case 4: console.log("Quarta"); break;
+       case 5: console.log("Quinta"); break;
+        case 6: console.log("Sexta"); break;
+         case 7: console.log("Sábado"); break;
     default: console.log("Dia inválido");
 }
 console.log("-----------------------------------------------------------");
@@ -219,6 +224,155 @@ console.log("-----------------------------------------------------------");
 const dePara = { A: "Excelente", B: "Bom", C: "Regular", D: "Ruim" };
 const nota = "A"; // Entrada
 console.log(dePara[nota.toUpperCase()] || "Nota Inválida");
+
+console.log("-----------------------------------------------------------");
+console.log("PARTE 4 – Laço FOR (26 a 35)");
+console.log("-----------------------------------------------------------");
+
+// 26- numeros de 1 a 100
+for (let i = 1; i <= 100; i++) 
+
+console.log("-----------------------------------------------------------");
+// 27- Numeros de 100 até 1
+for (let i = 100; i >= 1; i--) {
+    console.log(i);
+}
+
+console.log("-----------------------------------------------------------");
+// 28- Exiba apenas números pares de 1 a 50. 
+for (let i = 2; i <= 50; i += 2) {
+    console.log(i);
+}
+
+console.log("-----------------------------------------------------------");
+// 29- Exiba apenas números ímpares de 1 a 50.]
+for (let i = 1; i <= 50; i += 2) {
+    console.log(i);
+}
+
+console.log("-----------------------------------------------------------");
+// 30- Calcule a soma de 1 até 100.
+let soma = 0;
+
+for (let i = 1; i <= 100; i++) {
+    soma += i;
+}
+
+console.log("A soma de 1 até 100 é:", soma);
+
+console.log("-----------------------------------------------------------");
+// 31- Calcule o fatorial de um número.
+function fatorialRecursivo(n) {
+    if (n === 0 || n === 1) {
+        return 1;
+    }
+    return n * fatorialRecursivo(n - 1);
+}
+
+console.log(fatorialRecursivo(5)); 
+
+console.log("-----------------------------------------------------------");
+// 32- Exiba a tabuada de um número
+function exibirTabuada(numero) {
+    console.log(`.___. Tabuada do ${numero} .___.`);
+    
+    for (let i = 1; i <= 10; i++) {
+        let resultado = numero * i;
+        // Usando Template Strings (com a crase ` `) para facilitar a leitura
+        console.log(`${numero} x ${i} = ${resultado}`);
+    }
+    
+    console.log("_____________________________");
+}
+exibirTabuada(7);
+
+console.log("-----------------------------------------------------------");
+// 33- Conte quantos números pares existem entre 1 e 100.
+let contador = 0;
+
+for (let i = 2; i <= 100; i += 2) {
+    contador++;
+}
+
+console.log(`Existem ${contador} números pares entre 1 e 100.`);
+
+console.log("-----------------------------------------------------------");
+// 34- Exiba todos os múltiplos de 5 entre 0 e 100.
+for (let i = 0; i <= 100; i += 5) {
+    console.log(i);
+}
+
+console.log("-----------------------------------------------------------");
+// 35- Criar um programa de console *****
+for (let i = 1; i <= 5; i++) {
+    console.log("*".repeat(i));
+}
+
+console.log("-----------------------------------------------------------");
+console.log("PARTE 5 – Vetores (36 a 42)");
+console.log("-----------------------------------------------------------");
+
+// 36- Crie um vetor com 10 números e exiba todos.
+const numeros = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+
+for (let i = 0; i < numeros.length; i++) {
+    console.log(`Posição ${i}: ${numeros[i]}`);
+}
+
+console.log("-----------------------------------------------------------");
+// 37-  Calcule a soma dos elementos do vetor.
+for (let num of numeros) {
+    console.log(num);
+}
+
+console.log("-----------------------------------------------------------");
+// 38- Calcule a média do vetor.
+const lista = [10, 20, 30, 40, 50]; 
+let acumuladorSoma = 0;
+for (let i = 0; i < lista.length; i++) {
+    acumuladorSoma += lista[i]; 
+}
+const resultadoMedia = acumuladorSoma / lista.length;
+console.log("A média dessa lista é:", resultadoMedia);
+
+console.log("-----------------------------------------------------------");
+// 39- Encontre o maior valor do vetor.
+const numbers = [5, 12, 80, 55, 102, 4, 33, 71, 99, 2];
+let grande = numbers[0]; 
+for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] > grande) {
+        grande = numbers[i]; 
+    }
+}
+console.log("O maior número é: " + maior);
+
+console.log("-----------------------------------------------------------");
+// 40- 
+
+console.log("-----------------------------------------------------------");
+console.log("-----------------------------------------------------------");
+console.log("-----------------------------------------------------------");
+console.log("-----------------------------------------------------------");
+console.log("-----------------------------------------------------------");
+console.log("-----------------------------------------------------------");
+console.log("-----------------------------------------------------------");
+console.log("-----------------------------------------------------------");
+console.log("-----------------------------------------------------------");
+console.log("-----------------------------------------------------------");
+console.log("-----------------------------------------------------------");
+console.log("-----------------------------------------------------------");
+console.log("-----------------------------------------------------------");
+console.log("-----------------------------------------------------------");
+console.log("-----------------------------------------------------------");
+console.log("-----------------------------------------------------------");
+console.log("-----------------------------------------------------------");
+console.log("-----------------------------------------------------------");
+console.log("-----------------------------------------------------------");
+console.log("-----------------------------------------------------------");
+console.log("-----------------------------------------------------------");
+console.log("-----------------------------------------------------------");
+console.log("-----------------------------------------------------------");
+console.log("-----------------------------------------------------------");
 console.log("-----------------------------------------------------------");
 console.log("-----------------------------------------------------------");
 console.log("-----------------------------------------------------------");
