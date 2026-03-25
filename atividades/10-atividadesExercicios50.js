@@ -135,7 +135,93 @@ console.log("Maior:", v1 > v2 ? v1 : v2);
 
 console.log("-----------------------------------------------------------");
 // 19- Verifique o maior entre três numeros 
+let a1 = 5, a2 = 15, a3 = 10;
+let maior = a1;
+if (a2 > maior) maior = a2;
+if (a3 > maior) maior = a3;
+console.log("O maior entre os três é:", maior);
 
+console.log("-----------------------------------------------------------");
+// 20- Classificação de idade 
+let pIdade = 16;
+if (pIdade <= 12) console.log("Criança");
+else if (pIdade <= 17) console.log("Adolescente");
+else if (pIdade <= 59) console.log("Adulto");
+else console.log("Idoso");
+
+console.log("-----------------------------------------------------------");
+console.log("PARTE 3 – Switch Case (21 a 25)");
+console.log("-----------------------------------------------------------");
+
+// 21- Numero de 1 a 7, dias da semana
+let dia = 1;
+switch(dia) {
+    case 1: console.log("Domingo"); break;
+    case 2: console.log("Segunda"); break;
+    default: console.log("Dia inválido");
+}
+console.log("-----------------------------------------------------------");
+// 22- Numero de 1 a 12, exiba o nome do mês
+let menuSelecionado = "2 | Fevereiro";
+switch (menuSelecionado) {
+    case "1 | Janeiro":
+        console.log("Primeiro Trimestre '1 | Janeiro'");
+        break;
+    case "2 | Fevereiro":
+        console.log("Primeiro Trimestre '2 | Fevereiro'");
+        break;
+    case "3 | Março":
+        console.log("Primeiro Trimestre '3 | Março'");
+        break;
+    case "4 | Abril":
+        console.log("Segundo Trimestre '4 | Abril'");
+        break;
+    case "5 | Maio":
+         console.log("Segundo Trimestre '5 | Maio'")    
+        break;
+     case "6 | Junho":
+        console.log("Segundo Trimestre '6 | Junho'");
+        break;
+    case "7 | Julho":
+        console.log("Terceiro Trimestre '7 | Julho'");
+        break;
+    case "8 | Agosto":
+        console.log("Terceiro Trimestre '8 | Agosto'");
+        break;
+    case "9 | Setembro":
+        console.log("Terceiro Trimestre '9 | Setembro'");
+        break;
+    case "10 | Outubro":
+         console.log("Quarto Trimestre '10 | Outubro'")    
+        break;
+    case "11 | Novembro":
+        console.log("Quarto Trimestre '11 | Novembro'");
+        break;
+    case "12 | Dezembro":
+        console.log("Quarto Trimestre '12 | Dezembro'");
+        break;
+        default:
+        console.log("Mês incorreto, selecione uma opção no menu!");
+        break;
+    
+}    
+console.log("-----------------------------------------------------------");
+// 24- Criar um menu simples 
+let op = 1;
+switch(op) {
+    case 1: console.log("Operação Soma"); break;
+    case 2: console.log("Operação Subtrair"); break;
+    case 3: console.log("Operação Multiplicar"); break;
+    case 4: console.log("Operação dividir"); break;
+}
+console.log("-----------------------------------------------------------");
+// 25- Sistema de avaliação 
+const dePara = { A: "Excelente", B: "Bom", C: "Regular", D: "Ruim" };
+const nota = "A"; // Entrada
+console.log(dePara[nota.toUpperCase()] || "Nota Inválida");
+console.log("-----------------------------------------------------------");
+console.log("-----------------------------------------------------------");
+console.log("-----------------------------------------------------------");
 console.log("-----------------------------------------------------------");
 console.log("-----------------------------------------------------------");
 console.log("-----------------------------------------------------------");
