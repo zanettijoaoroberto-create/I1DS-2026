@@ -504,4 +504,3 @@ for (let i = 0; i < matrizdj.length; i++) {
   console.log("[ " + matrizdj[i].join(" ") + " ]");
 }
 console.log("-----------------------------------------------------------");
-// fim 🙃
