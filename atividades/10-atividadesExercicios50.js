@@ -347,38 +347,161 @@ for (let i = 1; i < numbers.length; i++) {
 console.log("O maior número é: " + maior);
 
 console.log("-----------------------------------------------------------");
-// 40- 
+// 40- Encontre o menor valor do vetor
+const nu0 = [15, 8, 42, 4, 23, 16];
+let menor0 = nu0[0]
+for (let i = 1; i < nu0.length; i++) {
+    if (nu0[i] < menor0)
+        menor0 = nu0[i]
+    }
+
+console.log("o menor numero é: " + menor0)
 
 console.log("-----------------------------------------------------------");
+// 41- Conte quantos números são pares e ímpares
+const parimpar= [5, 12, 80, 55, 102, 4, 33, 71, 99, 2];
+let pares = 0;
+let impares = 0;
+
+for (let i = 0; i < parimpar.length; i++) {
+  if (parimpar[i] % 2 === 0) {
+    pares++;
+  } else {
+    impares++;
+  }
+}
+
+console.log("Pares:", pares);
+console.log("Ímpares:", impares);
+
 console.log("-----------------------------------------------------------");
+//42. Multiplique todos os elementos por 2.
+const multi = [15, 8, 42, 4, 23, 16];
+for (let i = 0; i < multi.length; i++) {
+  multi[i] = multi[i] * 2;
+}
+console.log("Vetor multiplicado:", multi);
+
+
 console.log("-----------------------------------------------------------");
+console.log("PARTE 6 – Matrizes (43 a 50)");
 console.log("-----------------------------------------------------------");
+
+// 43- Crie uma matriz 3x3 e exiba todos os valores
+let matriz = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+for (let i = 0; i < matriz.length; i++) {
+  for (let j = 0; j < matriz[i].length; j++) {
+    console.log(matriz[i][j]);
+  }
+}
 console.log("-----------------------------------------------------------");
+// 44- Exiba a diagonal principal de uma matriz
+let matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+for (let i = 0; i < matrix.length; i++) {
+  console.log(matrix[i][i]);
+}
 console.log("-----------------------------------------------------------");
+// 45- Exiba a diagonal secundária
+let matrizdia = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+let n = matrizdia.length;
+
+for (let i = 0; i < n; i++) {
+  console.log(matrizdia[i][n - 1 - i]);
+}
 console.log("-----------------------------------------------------------");
+//46- Some todos os elementos da matriz
+
+let matrizele = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+let soma0 = 0;
+
+for (let i = 0; i < matrizele.length; i++) {
+  for (let j = 0; j < matrizele[i].length; j++) {
+    soma0 += matrizele[i][j];
+  }
+}
+console.log("Soma total:", soma0);
 console.log("-----------------------------------------------------------");
+// 47- Encontre o maior valor da matriz
+let matrizm = [
+  [1, 2, 3],
+  [4, 50, 6],
+  [7, 8, 9]
+];
+
+let maior0 = matriz[0][0];
+
+for (let i = 0; i < matrizm.length; i++) {
+  for (let j = 0; j < matrizm[i].length; j++) {
+    if (matrizm[i][j] > maior0) {
+      maior0 = matrizm[i][j];
+    }
+  }
+}
+
+console.log("Maior valor:", maior0);
+
 console.log("-----------------------------------------------------------");
+//48- Multiplique todos os valores por um número X
+let matrizex = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+let z = 2; 
+for (let i = 0; i < matrizex.length; i++) {
+  for (let j = 0; j < matrizex[i].length; j++) {
+    matrizex[i][j] = matrizex[i][j] * x;
+  }
+}
+
+console.log("Matriz multiplicada:", matriz);
 console.log("-----------------------------------------------------------");
+//49- Conte quantos valores são maiores que 10
+let matrizma = [
+  [2, 4, 6],
+  [8, 10, 12],
+  [14, 16, 18]
+];
+let cont = 0;
+for (let i = 0; i < matrizma.length; i++) {
+  for (let j = 0; j < matrizma[i].length; j++) {
+    if (matrizma[i][j] > 10) {
+      cont++;
+    }
+  }
+}
+
+console.log("Quantidade de valores maiores que 10:", cont);
 console.log("-----------------------------------------------------------");
+// 50- Crie uma matriz e exiba no formato desejado
+let matrizdj = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+for (let i = 0; i < matrizdj.length; i++) {
+  console.log("[ " + matrizdj[i].join(" ") + " ]");
+}
 console.log("-----------------------------------------------------------");
-console.log("-----------------------------------------------------------");
-console.log("-----------------------------------------------------------");
-console.log("-----------------------------------------------------------");
-console.log("-----------------------------------------------------------");
-console.log("-----------------------------------------------------------");
-console.log("-----------------------------------------------------------");
-console.log("-----------------------------------------------------------");
-console.log("-----------------------------------------------------------");
-console.log("-----------------------------------------------------------");
-console.log("-----------------------------------------------------------");
-console.log("-----------------------------------------------------------");
-console.log("-----------------------------------------------------------");
-console.log("-----------------------------------------------------------");
-console.log("-----------------------------------------------------------");
-console.log("-----------------------------------------------------------");
-console.log("-----------------------------------------------------------");
-console.log("-----------------------------------------------------------");
-console.log("-----------------------------------------------------------");
-console.log("-----------------------------------------------------------");
-console.log("-----------------------------------------------------------");
-console.log("-----------------------------------------------------------");
+// fim 🙃
