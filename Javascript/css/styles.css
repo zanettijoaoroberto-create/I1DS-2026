@@ -90,14 +90,18 @@ span {
 
 /* EXERCICIO 03 */
 
-#num1, #num2 {
+#num1,
+#num2 {
   padding: 10px;
   width: 170px;
   margin: 4px;
   margin-bottom: 12px;
 }
 
-#btn-soma, #btn-subtracao, #btn-multiplicacao, #btn-divisao {
+#btn-soma,
+#btn-subtracao,
+#btn-multiplicacao,
+#btn-divisao {
   background-color: coral;
   font-weight: bolder;
 }
@@ -105,5 +109,5 @@ span {
 #resultado {
   font-size: 32px;
   font-weight: bold;
-  margin-top: 12px auto;
+  margin: 12px auto;
 }
